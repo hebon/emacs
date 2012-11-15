@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sub.member
+# --
+sub member($$){
+	my(\$item, @list) = @_;
+	return scalar (grep {\$_ eq \$item} @list);
+}

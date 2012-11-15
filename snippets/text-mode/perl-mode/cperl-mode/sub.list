@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: sub.集合演算
+# --
+sub list_compare(\$\$){
+	my(\$left, \$right) = @_;
+	my(%data, %in_left, %in_right, %intersection, %union, %left_only, %right_only, %only);
+
+	\$in_left{\$_}++  foreach(@\$left);
+	\$in_right{\$_}++ foreach(@\$right);
+
+	foreach(keys %in_left){
+		\$union{\$_}++;
+		exists \$in_right{\$_} ? \$intersection{\$_}++ : \$left_only{\$_}++;
+	}
+	foreach(keys %in_right){
+		\$union{\$_}++;
+		\$right_only{\$_}++ unless (exists \$intersection{\$_});
+	}
+
+	\$data{intersection} = [keys(%intersection)];
+	\$data{union}        = [keys(%union)];
+	\$data{left_only}    = [keys(%left_only)];
+	\$data{right_only}   = [keys(%right_only)];
+
+	return \%data;
+}

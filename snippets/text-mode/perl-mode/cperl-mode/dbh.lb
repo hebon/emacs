@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: $p->{dbh_lb}
+# --
+$p->{dbh_lb}

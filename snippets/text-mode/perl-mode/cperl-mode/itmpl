@@ -1,0 +1,3 @@
+#name : itmpl
+# --
+new ITmpl({session => 1, fcgi => 1, db_info => $CONFIG{DB_INFO}});

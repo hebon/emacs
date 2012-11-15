@@ -1,0 +1,3 @@
+#name : lastid
+# --
+IDB::execFetch($dbh, 'SELECT LAST_INSERT_ID()');

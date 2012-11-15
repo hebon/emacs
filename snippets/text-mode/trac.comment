@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: trac.comment
+# --
+{{{
+$0
+}}}

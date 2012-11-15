@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: a_href
+# --
+<a href="$1">$0</a>

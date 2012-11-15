@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: require
+# --
+(when (require '$1 nil t)
+$0

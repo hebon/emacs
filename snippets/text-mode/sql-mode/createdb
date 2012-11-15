@@ -1,0 +1,6 @@
+#name : CREATE DATABASE
+# --
+CREATE DATABASE IF NOT EXISTS $1;
+GRANT ALL ON $1.* TO homepage@localhost;
+
+USE $1;

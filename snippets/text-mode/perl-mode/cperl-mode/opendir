@@ -1,0 +1,8 @@
+#name : opendir
+# --
+opendir(my \$dir, \$CONFIG{DIR});
+while(my \$file = readdir(\$dir)){
+	next if \$file eq '.' or \$file eq '..';
+	$1
+}
+closedir(\$dir);

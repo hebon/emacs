@@ -1,0 +1,10 @@
+#name : CREATE TABLE
+# --
+/*****************************************************************************
+ $1
+ *****************************************************************************/
+DROP TABLE IF EXISTS $1;
+CREATE TABLE IF NOT EXISTS $1(
+$1_id             INTEGER       NOT NULL AUTO_INCREMENT,
+PRIMARY KEY ($1_id)
+);

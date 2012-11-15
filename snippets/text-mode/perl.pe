@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: perl ファイル内容置換ワンライナー
+# --
+perl -i.bak -pe "s/${1:regexp}/${2:replaced}/g" ${3:file} $0

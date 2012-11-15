@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: message
+# --
+<itk_if name="message"><div class="message"><itk name="message"></div></itk_if>

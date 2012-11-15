@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: trac.comment_perl
+# --
+{{{
+#!perl
+$0
+}}}

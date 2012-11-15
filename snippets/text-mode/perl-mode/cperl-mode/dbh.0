@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: $p->{dbh}[0]
+# --
+$p->{dbh}[0]

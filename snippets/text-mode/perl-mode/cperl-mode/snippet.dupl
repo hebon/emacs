@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: snippet.重複削除
+# --
+my %count;
+@$1 = grep(!$count{$_}++, @$1);

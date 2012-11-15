@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: in
+# --
+my \$ph_list = join(',', ('?') x @id);
+\$sql .= " AND xxx IN (\$ph_list)";
+push(@ph, @id);
+
+$id_list = join(',', map {"'" . $_ . "'"} @id);

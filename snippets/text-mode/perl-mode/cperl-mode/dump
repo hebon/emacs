@@ -1,0 +1,5 @@
+#name : dump
+# --
+use Data::Dumper;
+print "Content-Type: text/html\n\n<plaintext>";
+print Dumper($1);

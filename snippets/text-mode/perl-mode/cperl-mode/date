@@ -1,0 +1,3 @@
+#name : date
+# --
+ITK2::getDateTimeString(time(), 'YYYY-MM-DD hh:mm:ss');

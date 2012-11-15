@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: dummy.email
+# --
+test.$1@intfloat.com

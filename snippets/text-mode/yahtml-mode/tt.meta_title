@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: tt.meta_title
+# --
+[% META title = '$1' %]

@@ -1,0 +1,3 @@
+#name : idbopen
+# --
+	$dbh = IDB::open($CONFIG{DB_INFO}[0]);

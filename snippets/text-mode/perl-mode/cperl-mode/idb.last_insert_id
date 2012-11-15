@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: idb.last_insert_id
+# --
+IDB::execFetch($p->{dbh}[0], "SELECT LAST_INSERT_ID()");

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: split.改行
+# --
+split(/(?:\r\n|\r|\n)/, ${1:\$_})

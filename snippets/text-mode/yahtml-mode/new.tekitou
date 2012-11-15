@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: new.TEKITOU
+# --
+<html>
+	<head>
+		<title>$1</title>
+	</head>
+	<body>
+$0
+	</body>
+</html>

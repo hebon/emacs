@@ -1,0 +1,15 @@
+#name : new(use ITmpl)
+# --
+#!/usr/bin/perl
+
+use strict;
+use vars qw(%CONFIG);
+use ITmpl;
+
+new ITmpl({db_info => $CONFIG{DB_INFO}});
+exit;
+
+sub default($){
+	my $p = $_[0];
+
+}

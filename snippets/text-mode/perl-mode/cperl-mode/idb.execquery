@@ -1,0 +1,3 @@
+#name : IDB::execQuery
+# --
+IDB::execQuery(\$p->{dbh_lb}, "$1", \@data, \@ph);

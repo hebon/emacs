@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: trac.comment_perl[SELECTED]
+# --
+{{{
+#!perl
+`yas/selected-text`$0
+}}}

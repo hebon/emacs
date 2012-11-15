@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: service_id
+# --
+service_id => $p->{service_id}

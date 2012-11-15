@@ -1,0 +1,6 @@
+# name: sub.catalyst
+# --
+sub ${1:default} :Local{
+	my(\$self, \$c) = @_;
+	$0
+}

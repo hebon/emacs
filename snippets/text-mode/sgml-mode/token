@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: token
+# --
+<input type="hidden" name="token" value="<itk name=session_attr:token>" />

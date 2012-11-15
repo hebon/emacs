@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tt.if
+# --
+[%- IF $0 -%]
+
+[%- ELSE -%]
+
+[%- END -%]

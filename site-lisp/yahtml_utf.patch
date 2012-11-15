@@ -1,0 +1,66 @@
+diff -u yatex1.72.zq/yahtml.el yatex/yahtml.el
+--- yatex1.72.zq/yahtml.el	2005-08-22 23:55:30.000000000 +0900
++++ yatex/yahtml.el	2005-11-11 18:44:22.000000000 +0900
+@@ -46,7 +46,8 @@
+ ;;; 
+ ;;; .htaccess が作れない場合は
+ ;;;	(setq yahtml-kanji-code 2)
+-;;;	;HTMLファイルの漢字コードを変更する場合は 1=SJIS、2=JIS、3=EUC
++;;;	;HTMLファイルの漢字コードを変更する場合は 
++;;;	;1=SJIS、2=JIS、3=EUC、4=UTF-8
+ ;;;	;で設定して下さい。デフォルトは 2 です。
+ ;;; 
+ ;;; を適切に書き換えて ~/.emacs に足して下さい。
+@@ -177,7 +178,7 @@
+ (defvar yahtml-www-browser "netscape"
+   "*WWW Browser command")
+ (defvar yahtml-kanji-code 2
+-  "*Kanji coding system number of html file; 1=sjis, 2=jis, 3=euc")
++  "*Kanji coding system number of html file; 1=sjis, 2=jis, 3=euc, 4=utf-8")
+ ;;(defvar yahtml-coding-system
+ ;;  (cdr (assq yahtml-kanji-code YaTeX-kanji-code-alist))
+ ;;  "Kanji coding system")
+diff -u yatex1.72.zq/yatex.el yatex/yatex.el
+--- yatex1.72.zq/yatex.el	2005-10-21 17:57:59.000000000 +0900
++++ yatex/yatex.el	2005-11-11 18:45:36.000000000 +0900
+@@ -543,7 +543,8 @@
+ 0: no-converion (mule)
+ 1: Shift JIS
+ 2: JIS
+-3: EUC")
++3: EUC
++4: UTF-8")
+ 
+ (defvar YaTeX-coding-system nil "File coding system used by Japanese TeX.")
+ (cond
+diff -u yatex1.72.zq/yatexlib.el yatex/yatexlib.el
+--- yatex1.72.zq/yatexlib.el	2005-10-21 16:54:41.000000000 +0900
++++ yatex/yatexlib.el	2005-11-11 18:47:28.000000000 +0900
+@@ -34,7 +34,7 @@
+ 
+ (defvar latex-message-kanji-code 2
+   "*Kanji coding system latex command types out.
+-1 = Shift JIS, 2 = JIS, 3 = EUC.")
++1 = Shift JIS, 2 = JIS, 3 = EUC, 4=UTF-8.")
+ 
+ (defvar YaTeX-kanji-code-alist
+   (cond
+@@ -46,7 +46,7 @@
+ 	    (YaTeX-dos (if (boundp '*sjis-dos*) *sjis-dos* *sjis*dos))
+ 	    (YaTeX-macos (if (boundp '*sjis-mac*) *sjis-mac* *sjis*mac))
+ 	    (t *sjis*)))
+-	  '(2 . *junet*) '(3 . *euc-japan*)))
++	  '(2 . *junet*) '(3 . *euc-japan*) '(4 . *utf-8*)))
+    ((and YaTeX-emacs-20 (featurep 'mule))
+     ;;(cdr-safe(assq 'coding-system (assoc "Japanese" language-info-alist)))
+     (list '(0 . no-conversion)
+@@ -56,7 +56,8 @@
+ 		   ((member 'shift_jis (coding-system-list)) 'shift_jis-unix)
+ 		   (t 'sjis)))
+ 	  '(2 . iso-2022-jp-unix)
+-	  '(3 . euc-jp-unix))))
++	  '(3 . euc-jp-unix)
++	  '(4 . utf-8-unix))))
+   "Kanji-code expression translation table.")
+ (defvar YaTeX-inhibit-prefix-letter nil
+   "*T for changing key definitions from [prefix] Letter to [prefix] C-Letter.")
