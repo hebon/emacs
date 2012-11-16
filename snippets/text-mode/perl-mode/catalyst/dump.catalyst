@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: dump.catalyst
+# expand-env: ((yas/indent-line 'fixed))
+# --
+use Data::Dumper;
+my \$dump = Dumper($1);
+\$c->res->content_type('text/plain; charset=utf-8');
+\$c->res->body($dump);
+$0

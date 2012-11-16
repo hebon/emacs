@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: class.models
+# --
+class $1(models.Model):
+    class Meta:
+        ordering = ["###"]
+
+    ###_id = models.AutoField(primary_key=True)
+
+    def __unicode__(self):
+        return self.###_nm
+$0

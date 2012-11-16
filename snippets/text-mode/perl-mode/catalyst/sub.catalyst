@@ -1,0 +1,8 @@
+# name: sub.catalyst
+# --
+sub ${1:default} :Local {
+    my ( \$self, \$c ) = @_;
+    my ( %form );
+    %form = %{ \$c->req->params };
+    $0
+}

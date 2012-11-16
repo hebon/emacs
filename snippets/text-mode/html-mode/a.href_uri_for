@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: a.href_uri_for
+# --
+<a href="[% c.uri_for('$1') | quote%]">$0</a>

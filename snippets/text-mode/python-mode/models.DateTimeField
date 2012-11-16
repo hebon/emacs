@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.DatetimeField
+# --
+models.DateTimeField(_('$1'))$0

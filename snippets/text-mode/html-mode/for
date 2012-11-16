@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: for
+# --
+{% for item in list %}$0{% endfor %}

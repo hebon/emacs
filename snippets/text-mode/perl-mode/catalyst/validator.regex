@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: validator.regex
+# --
+REGEX   => "$1の形式が不正です。",

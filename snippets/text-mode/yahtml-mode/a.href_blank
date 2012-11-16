@@ -1,4 +1,0 @@
-# -*- mode: snippet -*-
-# name: a_href (target="blank")
-# --
-<a href="$1" target="blank">$0</a>

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: comment.sub
+# expand-env: ((yas/indent-line 'fixed))
+# --
+=head2 $1
+
+$2
+params: $3
+return: $4
+
+=cut

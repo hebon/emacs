@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: sub.catalyst_with_pod
+# expand-env: ((yas/indent-line 'fixed))
+# --
+=head2 $1
+
+$2
+params: $3
+return: $4
+
+=cut
+
+sub $1 :Local {
+    my ( $self, $c ) = @_;
+    my ( %form );
+    %form = %{ $c->req->params };
+$0
+}

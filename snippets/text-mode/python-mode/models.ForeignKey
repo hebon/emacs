@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.ForeignKey
+# --
+models.ForeignKey($1)$0

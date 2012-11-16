@@ -1,0 +1,29 @@
+text
+  css
+  elisp
+  js              js, xml, html, yahtml でつかう
+    sgml          xml, html, yahtml でつかう / js ではつかわない
+      html        html, yahtml でつかう
+        yahtml    (yahtmlでのみつかう:ここには置かない)
+  perl
+    cperl
+  snippet
+  sql
+  python
+
+
+cperl > perl
+yahtml > sgml > js
+html > sgml > js
+
+cperl > text
+css > text
+elisp > text
+html > text
+js > text
+perl > text
+python > text
+sgml > text
+snippet > text
+sql > text
+yahtml > text

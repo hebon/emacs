@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: c.stash
+# --
+\$c->stash->{$1}$0

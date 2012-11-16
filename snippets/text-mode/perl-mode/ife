@@ -1,8 +1,9 @@
 #name : if (...) { ... } else { ... }
+# expand-env: ((yas/indent-line 'fixed))
 # --
 if($1){
-    $2
+	$2
 }
 else{
-    $3
+	$3
 }

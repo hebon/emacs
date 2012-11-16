@@ -1,4 +1,0 @@
-# -*- mode: snippet -*-
-# name: traclinks.comment
-# --
-comment:ticket:${1:ticket_id}:${2:comment_id}

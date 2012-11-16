@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.IntegerField
+# --
+models.IntegerField(_('$1'))$0

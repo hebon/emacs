@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: log.dumper
+# expand-env: ((yas/indent-line 'fixed))
+# --
+my \$dump = $1
+use Data::Dumper;
+\$c->log->debug(Dumper(\$dump));

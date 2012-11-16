@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.TextField
+# --
+models.TextField(_('$1'))$0

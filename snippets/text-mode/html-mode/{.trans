@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: {.trans
+# --
+{% trans $1 %}$0

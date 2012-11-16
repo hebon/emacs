@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: new.models
+# --
+# -*- coding: utf-8 -*-
+
+from django.db import models
+import datetime
+
+class $1(models.Model):
+      $1_id = models.AutoField(_('$1_id'))
+	  $1_nm = models.CharField(_('$1_nm'), max_length=255)
+
+    def __unicode__(self):
+        return self.$1_nm
+$0

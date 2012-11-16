@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: index
+# --
+db_index=True

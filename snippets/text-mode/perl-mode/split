@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: split
+# --
+split(/(?:\r\n|\r|\n)/, $_);

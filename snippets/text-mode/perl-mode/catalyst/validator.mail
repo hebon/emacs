@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: validator.mail
+# --
+EMAIL_LOOSE   => "メールアドレスの形式が不正です。",

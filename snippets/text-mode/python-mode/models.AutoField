@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.AutoField
+# --
+models.AutoField(_('$1'), primary_key=True)$0

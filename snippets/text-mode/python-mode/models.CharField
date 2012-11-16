@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.CharField
+# --
+models.CharField(_('$1'), max_length=$2)$0

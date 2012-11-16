@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: validator.empty
+# --
+NOT_BLANK   => "$1を入力してください。",

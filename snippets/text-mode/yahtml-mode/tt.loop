@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: tt.loop
-# --
-[% FOREACH data = ${1:data} %]
-[% data.$2 %]
-[% END %]

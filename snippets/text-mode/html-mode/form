@@ -1,0 +1,8 @@
+#name :form
+#expand-env: ((yas/indent-line 'fixed))
+# --
+<form method="post" action="<itk name=CONFIG:SCRIPT_NAME>">
+	<input type="hidden" name="mode" value="$1" />
+	$2
+	<input type="submit" value="submit" />
+</form>

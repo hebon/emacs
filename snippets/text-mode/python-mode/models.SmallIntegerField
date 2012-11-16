@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: models.SmallIntegerField
+# --
+models.SmallIntegerField(_('$1'))$0

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: page
+# --
+\$page = ( defined( \$form{page} ) and \$form{page} =~ /^[0-9]+\$/ ) ? \$form{page} : 1;
