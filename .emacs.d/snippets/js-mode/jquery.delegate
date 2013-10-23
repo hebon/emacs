@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jquery.delegate
+# expand-env: ((yas/indent-line 'fixed))
+# --
+$('body').delegate('$1', 'click', function(e){
+	e.preventDefault();
+	$0
+});

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: query.log
+# --
+use DBIx::QueryLog;
+open my \$fh, '>>', '/tmp/query.log' or die \$!;
+\$DBIx::QueryLog::OUTPUT = \$fh;
+DBIx::QueryLog->enable;
+
+$0
+
+DBIx::QueryLog->disable;

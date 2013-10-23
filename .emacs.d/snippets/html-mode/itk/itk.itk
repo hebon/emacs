@@ -1,0 +1,4 @@
+# -*- mode: html -*-
+# name: itk
+# --
+<itk name="$1" $0>

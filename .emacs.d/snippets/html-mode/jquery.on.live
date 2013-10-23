@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: jquery.on.live
+# --
+\$(document).on('click','$1',function(){
+    alert('live');
+});

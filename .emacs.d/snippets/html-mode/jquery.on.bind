@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: jquery.on.bind
+# --
+\$('$1').on('click',function(){
+    alert('bind');
+});

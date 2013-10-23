@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: url
+# --
+url(r'^$1/\$', '$1'),$0

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: toast
+# --
+Toast.makeText(this, "$1", Toast.LENGTH_SHORT).show();$0

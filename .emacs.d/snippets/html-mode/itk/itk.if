@@ -1,0 +1,4 @@
+# -*- mode: html -*-
+# name: itk_if
+# --
+<itk_if name="$1" value="$2">$0</itk_if>
