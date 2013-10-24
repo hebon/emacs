@@ -1,5 +1,11 @@
 ;;; -*- mode: lisp-interaction; syntax: elisp -*-
 
+;; list-packages リスト追加
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; JAPANESE
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -318,8 +324,8 @@
 
 
 ;; for ChangeLog (C-x 4 a (default))
-(setq user-full-name "Mai Hasebe")
-(setq user-mail-address "hasebe@intfloat.com")
+(setq user-full-name "")
+(setq user-mail-address "")
 (defun memo ()
   (interactive)
     (add-change-log-entry
@@ -396,9 +402,6 @@
 ;; yasnippet
 (when (require 'yasnippet nil t)
 
-  (add-to-list 'load-path
-			   (expand-file-name "~/.emacs.d/elpa/dropdown-list-20120329.1636/"))
-
   ;; oneshot-snippet
   (require 'yasnippet-config)
 
@@ -418,8 +421,6 @@
 )
 
 ;;;; for new version (0.8.0)
-;; (add-to-list 'load-path
-;;              (expand-file-name "~/.emacs.d/elpa/yasnippet-20131021.928"))
 ;; (when (require 'yasnippet nil t)
 ;;   (setq yas-snippet-dirs
 ;; 		'(

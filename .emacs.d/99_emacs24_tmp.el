@@ -298,12 +298,6 @@
   (set-face-attribute 'magit-item-highlight nil :inherit nil))
 (add-hook 'magit-mode-hook 'magit-setup-diff)
 
-;; list-packages リスト追加
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
-
 ;; nxml-mode
 (setq nxml-child-indent 4)
 
@@ -314,3 +308,19 @@
 
 ;; textile(redmine)
 (require 'textile-mode nil t)
+
+(add-to-list 'load-path "C:/Users/hasebe/.emacs.d/elpa/twittering-mode-3.0.0")
+(require 'twittering-mode)
+(setq twittering-icon-mode nil)
+(setq twittering-auth-method 'xauth)
+(setq twittering-username "hebon")
+;(setq twittering-password "")
+(setq twittering-initial-timeline-spec-string
+      '(
+;        ":home" ":replies" ":favorites" ":direct_messages" ":search/emacs/"
+        "hebon/rom"))
+
+;; org-mode
+(setq org-export-html-style-include-scripts nil)
+(setq org-export-html-style-include-default nil)
+(setq org-export-html-validation-link nil)
